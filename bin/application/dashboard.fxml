@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+    <Button fx:id="back" defaultButton="true" layoutX="494.0" layoutY="8.0" mnemonicParsing="false" onAction="#showMenu" style="-fx-background-color: #d9edff;" text="Back to Menu" />
+    <ImageView fitHeight="135.94374076550946" fitWidth="135.35777282714844" layoutX="311.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@notes.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="profile" defaultButton="true" layoutX="300.0" layoutY="212.0" mnemonicParsing="false" onAction="#showPatientProfile" prefHeight="25.0" prefWidth="154.0" text="Profile" />
+    <ImageView fitHeight="136.0" fitWidth="138.0" layoutX="99.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@booook.PNG" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="148.21049307717453" fitWidth="153.99996948242188" layoutX="99.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@prwedqf.PNG" />
+      </image>
+    </ImageView>
+    <Button fx:id="eprescription" defaultButton="true" layoutX="99.0" layoutY="384.0" mnemonicParsing="false" onAction="#viewEprescription" prefWidth="154.0" text="E-prescriptions" />
+    <Label layoutX="237.0" layoutY="7.0" minHeight="10.0" prefHeight="21.0" prefWidth="148.0" text="DASHBOARD" textFill="#003d99">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+      <ImageView fitHeight="36.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+    <Button fx:id="findDoc" blendMode="DARKEN" cache="true" cacheHint="QUALITY" cancelButton="true" defaultButton="true" disable="false" focusTraversable="true" layoutX="91.0" layoutY="212.0" mnemonicParsing="false" mouseTransparent="false" onAction="#findDoctor" pickOnBounds="false" prefWidth="154.0" text="Book Appointment" underline="false" visible="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@booook.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="bill" defaultButton="true" layoutX="302.0" layoutY="387.0" mnemonicParsing="false" onAction="#goToBill" prefHeight="25.0" prefWidth="154.0" text="View Bill" />
+  </children>
+</AnchorPane>

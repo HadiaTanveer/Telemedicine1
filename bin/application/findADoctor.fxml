@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.findADoctorController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5baaf07a" height="337.0" layoutX="14.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="572.000022070315" />
+    <VBox layoutX="288.0" layoutY="93.0" prefHeight="265.0" prefWidth="253.0">
+         <children>
+            <ImageView fitHeight="273.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+               
+            </ImageView>
+         </children>
+    </VBox>
+    <Button fx:id="findDr_spec" layoutX="46.0" layoutY="171.0" mnemonicParsing="false" onAction="#goToFindDrBySpec" prefHeight="36.0" prefWidth="193.0" style="-fx-background-color: #1e81b0;" text="Find Doctor by Name" textFill="WHITE" />
+    <Button id="dLogin" fx:id="findDr_Disease" layoutX="46.0" layoutY="232.0" mnemonicParsing="false" onAction="#goToFindDrByDisease" prefHeight="36.0" prefWidth="193.0" style="-fx-background-color: #1e81b0;" text="Find Doctor by Speciality" textFill="WHITE" />
+    <Label layoutX="46.0" layoutY="105.0" prefWidth="226.0" text="FIND A DOCTOR" textFill="#002966">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+    <Button fx:id="back" defaultButton="true" layoutX="452.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToPatientDashboard" prefWidth="134.0" style="-fx-background-color: #d9edff;" text="Back to Dashboard" />
+      <ImageView fitHeight="36.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>

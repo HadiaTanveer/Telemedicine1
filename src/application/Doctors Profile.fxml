@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoctorProfileController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5baaf07a" height="331.0" layoutX="14.0" layoutY="51.0" stroke="TRANSPARENT" strokeType="INSIDE" width="572.0" />
+    <Separator layoutX="322.0" layoutY="51.0" orientation="VERTICAL" prefHeight="331.0" prefWidth="7.0" />
+    <ImageView fitHeight="82.0" fitWidth="81.0" layoutX="110.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@kji.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="62.0" layoutY="192.0" text="Specialization" />
+    <Label fx:id="dName" layoutX="181.0" layoutY="166.0" text="- - -" />
+    <Label fx:id="dSpecialization" layoutX="180.0" layoutY="192.0" text="- - -" />
+    <Label layoutX="60.0" layoutY="221.0" text="Contact #" />
+    <Label fx:id="dNum" layoutX="180.0" layoutY="221.0" text="- - -" />
+    <Label layoutX="60.0" layoutY="248.0" text="Email" />
+    <Label fx:id="dEmail" layoutX="181.0" layoutY="248.0" text="- - -" />
+    <Label layoutX="57.0" layoutY="276.0" text="Available Hours" />
+    <Label fx:id="dAvailableHrs" layoutX="181.0" layoutY="276.0" prefHeight="17.0" prefWidth="99.0" text="- - -" />
+    <Label layoutX="61.0" layoutY="166.0" prefWidth="50.0" text="Name" />
+    <Label layoutX="370.0" layoutY="62.0" text="Specialization Document" />
+    <ImageView fitHeight="127.99492401316955" fitWidth="98.88235473632812" layoutX="381.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@pii.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="411.0" layoutY="217.0" text="Degree" />
+    <ImageView fitHeight="127.99503408202872" fitWidth="98.88243962062386" layoutX="381.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@pii.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="61.0" layoutY="312.0" text="Working Days" />
+    <Label fx:id="dClinicAddress" layoutX="181.0" layoutY="312.0" prefHeight="17.0" prefWidth="124.0" text="- - -" />
+      <ImageView fitHeight="60.0" fitWidth="131.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cross" layoutX="556.0" layoutY="2.0" mnemonicParsing="false" onAction="#showDoctorDashboard" style="-fx-background-color: #d9edff;" text="X" textFill="#fb1313">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+  </children>
+</AnchorPane>

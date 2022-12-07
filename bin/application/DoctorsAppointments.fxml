@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoctorsAppointmentsController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ebed" height="91.0" layoutX="62.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="477.0" />
+    <Button fx:id="back" defaultButton="true" layoutX="535.0" layoutY="5.0" mnemonicParsing="false" onAction="#goToDrDashboard" text="Back" />
+    <ImageView fitHeight="61.0" fitWidth="53.0" layoutX="115.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@kji.png" />
+        
+      </image>
+    </ImageView>
+    <Label layoutX="232.0" layoutY="103.0" text="Department:" />
+    <Label layoutX="229.0" layoutY="77.0" text="Doctor Name:" />
+    <Label fx:id="dName" layoutX="343.0" layoutY="77.0" text="- - -" />
+    <Label fx:id="dep" layoutX="343.0" layoutY="103.0" text="- - -" />
+    <Button fx:id="reject" defaultButton="true" layoutX="475.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToDrDashboard" text="Reject" />
+    <Button fx:id="accept" defaultButton="true" layoutX="401.0" layoutY="348.0" mnemonicParsing="false" onAction="#appointmentConfirm" text="Accept" />
+    <Label layoutX="183.0" layoutY="4.0" text="APPOINTMENTS REQUESTS" textFill="#002966">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+      <ImageView fitHeight="36.0" fitWidth="141.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="list" layoutX="62.0" layoutY="179.0" prefHeight="159.0" prefWidth="477.0" />
+      <Label layoutX="62.0" layoutY="153.0" prefHeight="25.0" prefWidth="477.0" style="-fx-background-color: #C0C0C0;" text="  ID.                                    Patient Name                                   Time                       ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+  </children>
+</AnchorPane>

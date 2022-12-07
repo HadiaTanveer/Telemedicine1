@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ePrescriptionController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5baaf07a" height="336.0000999999975" layoutX="14.0" layoutY="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="572.0" />
+    <ImageView fitHeight="233.0344804284954" fitWidth="241.35714721679688" layoutX="320.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@E-Prescription-Report-Generated-As-the-prescription-is-electronically-generated-it-does.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="43.0" layoutY="74.0" text="Patient name:" />
+    <Label fx:id="pName" layoutX="190.0" layoutY="74.0" text="- - -" />
+    <Label layoutX="43.0" layoutY="97.0" text="Consulted Doctor:" />
+    <Label fx:id="dName" layoutX="190.0" layoutY="94.0" text="- - -" />
+    <Button defaultButton="true" layoutX="320.0" layoutY="309.0" mnemonicParsing="false" text="Save as JPEG" />
+    <Button defaultButton="true" layoutX="477.0" layoutY="309.0" mnemonicParsing="false" text="Save as PDF" />
+    <Button defaultButton="true" layoutX="320.0" layoutY="343.0" mnemonicParsing="false" text="Save as PNG" />
+    <Button defaultButton="true" layoutX="477.0" layoutY="343.0" mnemonicParsing="false" prefWidth="84.0" text="Print" />
+    <Label layoutX="47.0" layoutY="143.0" text="QR code of E-prescription:" textFill="#002966">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="71.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@qr-code.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="back" defaultButton="true" layoutX="539.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToPatientDashboard" style="-fx-background-color: #d9edff;" text="Back" />
+    <Label layoutX="221.0" layoutY="5.0" text="E-PRESCRIPTIONS" textFill="#003d99">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+      <ImageView fitHeight="36.0" fitWidth="153.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>

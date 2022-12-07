@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="600.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DoctorSignUpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="38.0" stroke="#00000006" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="38.0" fitWidth="163.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5baaf07b" height="364.0" layoutX="35.0" layoutY="89.0" stroke="TRANSPARENT" strokeType="INSIDE" width="533.0" />
+      <VBox layoutX="338.0" layoutY="93.0" prefHeight="215.0" prefWidth="230.0">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Text fill="#053079" layoutX="202.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Sign Up">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="dName" layoutX="138.0" layoutY="113.0" onAction="#getDoctorName" prefHeight="25.0" prefWidth="173.0" promptText="Doctor Name" />
+      <TextField fx:id="dEmail" layoutX="138.0" layoutY="188.0" onAction="#getDoctorEmail" prefHeight="25.0" prefWidth="173.0" promptText="Email" />
+      <TextField fx:id="dSpeciality" layoutX="138.0" layoutY="222.0" onAction="#getDoctorSpeciality" prefHeight="25.0" prefWidth="173.0" promptText="Speciality" />
+      <TextField fx:id="dPhoneNum" layoutX="138.0" layoutY="261.0" onAction="#getDoctorPhone" prefHeight="25.0" prefWidth="173.0" promptText="Phone Number" />
+      <TextField fx:id="dAvailableHrs" layoutX="138.0" layoutY="301.0" onAction="#getDoctorAvailableHrs" prefHeight="25.0" prefWidth="173.0" promptText="eg. 9,10,11,12,16,17,18,19,20" />
+      <TextField fx:id="dClinicHrs" layoutX="138.0" layoutY="341.0" onAction="#getDoctorworkingDays" prefHeight="25.0" prefWidth="173.0" promptText="Monday, Tuesday,Wednesday" />
+      <PasswordField fx:id="dPassword" layoutX="138.0" layoutY="151.0" onAction="#getDoctorPassword" prefHeight="25.0" prefWidth="173.0" promptText="Password" />
+      <Text fill="#032862" layoutX="53.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Name" />
+      <Text fill="#032862" layoutX="53.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text fill="#032862" layoutX="53.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text fill="#032862" layoutX="53.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Speciality" />
+      <Text fill="#032862" layoutX="53.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+      <Text fill="#032862" layoutX="52.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Hours" />
+      <Text fill="#032862" layoutX="53.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Working Days" />
+      <Text fill="#032862" layoutX="355.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Degree" />
+      <Text fill="#032862" layoutX="453.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialization" />
+      <ImageView fitHeight="52.0" fitWidth="50.0" layoutX="350.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@addimage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="63.0" layoutX="464.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@addimage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="registerDoc" layoutX="167.0" layoutY="411.0" mnemonicParsing="false" onAction="#showDoctorDashboard" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1e81b0;" text="Register" textFill="WHITE" />
+      <Button fx:id="back" layoutX="500.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToMain" style="-fx-background-color: #d9edff;" text="Back to Menu" />
+      <Hyperlink fx:id="alreadyReg" layoutX="157.0" layoutY="382.0" onAction="#oToLogin" text="Already registered?" textFill="#095688" underline="true" />
+   </children>
+</AnchorPane>

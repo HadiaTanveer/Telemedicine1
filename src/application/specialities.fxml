@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.specialitiesController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="36.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+    <Button fx:id="back" defaultButton="true" layoutX="465.0" layoutY="7.0" mnemonicParsing="false" onAction="#goToFindDoctor" style="-fx-background-color: #d9edff;" text="Back to Find Doctor" />
+    <Button fx:id="paediatrics" blendMode="DARKEN" cache="true" cacheHint="QUALITY" cancelButton="true" defaultButton="true" disable="false" focusTraversable="true" layoutX="91.0" layoutY="184.0" mnemonicParsing="false" mouseTransparent="false" onAction="#peads" pickOnBounds="false" prefWidth="154.0" text="Paediatrics" underline="false" visible="true" />
+    <Button fx:id="otorhin" defaultButton="true" layoutX="336.0" layoutY="184.0" mnemonicParsing="false" onAction="#goToOtorhin" prefWidth="154.0" text="Otorhinolaryngology" />
+    <Button fx:id="cardio" defaultButton="true" layoutX="91.0" layoutY="354.0" mnemonicParsing="false" onAction="#cardiology" prefWidth="154.0" text="Cardiology" />
+    <Button fx:id="nephro" defaultButton="true" layoutX="336.0" layoutY="354.0" mnemonicParsing="false" onAction="#nephrology" prefWidth="154.0" text="Nephrology" />
+    <Label layoutX="237.0" layoutY="7.0" minHeight="10.0" prefHeight="21.0" prefWidth="148.0" text="SPECIALITIES" textFill="#003d99">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="135.94382558593497" fitWidth="138.34990950916566" layoutX="99.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@paeds.PNG" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="139.52224277489177" fitWidth="138.34979248046875" layoutX="344.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@ent.PNG" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="140.2025133303289" fitWidth="141.99998474121094" layoutX="95.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@cardiology.PNG" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="144.18325890153514" fitWidth="154.0" layoutX="336.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@nephro.PNG" />
+      </image>
+    </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+  </children>
+</AnchorPane>

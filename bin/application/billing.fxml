@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.billingController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9edff" height="38.000099999997474" layoutX="2.0" layoutY="5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="596.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5baaf07a" height="333.0" layoutX="13.0" layoutY="33.0" stroke="TRANSPARENT" strokeType="INSIDE" width="573.4141845703125" />
+    <Button id="dLogin" fx:id="proceed" layoutX="165.0" layoutY="308.0" mnemonicParsing="false" onAction="#proceedToCheckout" prefHeight="36.0" prefWidth="245.0" style="-fx-background-color: #1e81b0;" text="Proceed to Checkout" textFill="WHITE" />
+    <Button fx:id="back" defaultButton="true" layoutX="436.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefWidth="151.0" text="Back to Menu" />
+    <Label layoutX="240.0" layoutY="12.0" text="Billing">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+      <textFill>
+        <Color red="0.000" green="0.161" blue="0.400" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label fx:id="dName" layoutX="141.0" layoutY="125.0" text="- - -" />
+    <Label layoutX="26.0" layoutY="125.0" text="Doctor Name:" textFill="#004166">
+      <font>
+        <Font name="System Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Line endX="275.0" endY="2.0" layoutX="310.0" layoutY="151.0" startX="-297.0" startY="0.0" />
+    <Label font="$x1" layoutX="26.0" layoutY="68.0" text="Patient Name:" textFill="#000833" />
+    <Label font="$x1" layoutX="23.0" layoutY="94.0" text="Consultation time" />
+    <Label fx:id="pName" layoutX="141.0" layoutY="70.0" />
+    <Label fx:id="time" layoutX="141.0" layoutY="94.0" text="- - -" />
+    <Text fill="#002966" layoutX="209.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x3" />
+      </font>
+    </Text>
+    <Label fx:id="bill" layoutX="275.0" layoutY="167.0" prefHeight="19.0" prefWidth="134.0" text="0.00" />
+    <Text fill="$x2" font="$x3" layoutX="162.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax + GST" />
+    <Label fx:id="tax" layoutX="275.0" layoutY="212.0" prefWidth="109.0" text="0.00" />
+      <ImageView fitHeight="36.0" fitWidth="134.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Annotation%202022-05-23%20113157.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="162.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL BILL:">
+         <fill>
+            <Color red="0.000" green="0.161" blue="0.400" fx:id="x21" />
+         </fill>
+         <font>
+            <Font name="System Bold" size="16.0" fx:id="x31" />
+         </font>
+      </Text>
+      <Label fx:id="total" layoutX="275.0" layoutY="251.0" prefWidth="109.0" text="0.00" />
+  </children>
+</AnchorPane>
